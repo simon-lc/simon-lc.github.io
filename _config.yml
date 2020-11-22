@@ -4,7 +4,7 @@
 # Site settings
 title: Simon Le Cleac'h
 description: |
-  PhD Candidate 
+  PhD Candidate
   at
   Stanford University
 owner: Simon Le Cleac'h # or company name
@@ -13,7 +13,7 @@ email: your-email@domain.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 social:
-  #twitter: https://twitter.com/<username>
+  twitter: https://twitter.com/simonlc_
   github: https://github.com/simon-lc
   linkedin-square: https://www.linkedin.com/in/simon-lc/
   #facebook-official: https://facebook.com/<username>
