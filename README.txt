@@ -59,3 +59,9 @@ Credits:
 		Misc. Sass functions (@HugoGiraudel)
 		Respond.js (j.mp/respondjs)
 		Skel (skel.io)
+
+
+Build the site and make it available on a local server. 
+https://jekyllrb.com/docs/
+
+	bundle exec jekyll serve
