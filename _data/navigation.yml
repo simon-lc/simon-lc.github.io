@@ -1,10 +1,10 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Talks"
-    url: /talks/
   - title: "Papers"
     url: /papers/
+  - title: "Talks"
+    url: /talks/
   - title: "Teaching"
     url: /teaching/
   - title: "Software"
