@@ -32,5 +32,5 @@ If you have a question about using Jekyll, start a discussion on the [Jekyll For
 - bundle clean --force
 - bundle install
 - bundle exec jekyll serve --baseurl=""
-- the site is autmatically updated when making changes to the files. 
+- the site is automatically updated when making changes to the files. 
 
