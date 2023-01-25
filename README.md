@@ -35,3 +35,6 @@ If you have a question about using Jekyll, start a discussion on the [Jekyll For
 - the site is automatically updated when making changes to the files. 
 - change font types and sizes in /assets/css/main.scss
 - check this link for examples: [https://github.com/mmistakes/minimal-mistakes/tree/master/docs](https://github.com/mmistakes/minimal-mistakes/tree/master/docs)
+- check these links for templates:
+- [https://github.com/academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io)
+- [https://github.com/mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes)
