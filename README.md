@@ -38,3 +38,5 @@ If you have a question about using Jekyll, start a discussion on the [Jekyll For
 - check these links for templates:
 - [https://github.com/academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io)
 - [https://github.com/mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes)
+- generate gallery from folder `/assets/papers/dojo/`
+- ```find -maxdepth 1 -type f ! -name flist.txt -printf  "  - url/assets/papers/dojo/%P\n    image_path: /assets/papers/dojo/%P\n    alt: \"%P\"\n" > flist.txt```
