@@ -1,6 +1,8 @@
 ---
 permalink: /talks/
 title: "Talks"
+layout: single
+classes: wide
 ---
 
 
