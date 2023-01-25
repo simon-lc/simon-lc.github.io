@@ -1,5 +1,5 @@
 main:
-  - title: "Publications"
+  - title: "Papers"
     url: /publications/
   - title: "Talks"
     url: /talks/
@@ -7,8 +7,8 @@ main:
     url: /cv/
   - title: "Teaching"
     url: /teaching/
-  - title: "Portfolio"
-    url: /portfolio/
+  # - title: "Portfolio"
+  #   url: /portfolio/
   - title: "Software"
     url: /software/
   # - title: "Gallery"
