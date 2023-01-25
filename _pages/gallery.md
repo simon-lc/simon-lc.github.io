@@ -323,23 +323,27 @@ gallery_algames:
 ---
 
 This is a quick selection of some of the animations I created during my PhD. The filenames are not very explicit.\
-Ordering is random.
+Ordering is... random.
 
 # Silico
 {% include gallery id="gallery_silico" %}
 
+***
 
 # Dojo
 {% include gallery id="gallery_dojo" %}
 
+***
 
 # Contact Implicit MPC
-{% include gallery id="gallery_silico" %}
+{% include gallery id="gallery_cimpc" %}
 
+***
 
 # Dynamics Augmented Neural Objects
 {% include gallery id="gallery_dano" %}
 
+***
 
 # Algames
 {% include gallery id="gallery_algames" %}
