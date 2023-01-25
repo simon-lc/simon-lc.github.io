@@ -53,7 +53,7 @@ _May 2022_
 
 
 **Dojo: A Differentiable Simulator for Robotics.**\
-[(slides)](https://slides.com/simonlc/dojo)\
+[(slides)](https://slides.com/simonlc/dojo)
 [(video)](https://youtu.be/TRtOESXJxJQ)\
 Search-based Planning Laboratory, Carnegie Mellon University.\
 _August 2022_\
