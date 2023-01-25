@@ -226,10 +226,6 @@ gallery_cimpc:
     image_path: /assets/papers/cimpc/flamingo_flat_short.gif
     alt: "flamingo_flat_short.gif"
     title: "flamingo_flat_short.gif"
-  - url: /assets/papers/cimpc/robust_trotting.gif
-    image_path: /assets/papers/cimpc/robust_trotting.gif
-    alt: "robust_trotting.gif"
-    title: "robust_trotting.gif"
   - url: /assets/papers/cimpc/racecar_start.gif
     image_path: /assets/papers/cimpc/racecar_start.gif
     alt: "racecar_start.gif"
