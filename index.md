@@ -33,10 +33,10 @@ With Dojo, we took a physics- and optimization-first apporaches to some of the l
 {: style="text-align: justify;"}
 
 <!-- <figure style="width: 600px" class="align-center"> -->
+<!-- style="height: 530px; object-fit: cover; object-position: 0 100%;"  -->
 <figure class="align-center">
     <img 
         src="{{ site.url }}{{ site.baseurl }}/assets/papers/dojo/springy_quadruped.gif"
-        style="height: 530px; object-fit: cover; object-position: 0 100%;" 
         alt="springy_quadruped.gif" 
     />
     <figcaption>Differentiable simulation of a Unitree A1 quadruped in Dojo.</figcaption>

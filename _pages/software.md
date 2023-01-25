@@ -23,6 +23,11 @@ gallery:
     title: "Algames.jl"
 ---
 
+<!-- <style>
+td, th {
+   border: none!important;
+}
+</style> -->
 
 | Name                        | Description | Link    |
 | ----                        | ----------- | ------- |
