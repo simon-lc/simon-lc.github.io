@@ -5,6 +5,65 @@ layout: single
 # classes: wide
 ---
 
+## Unified collision detection and contact dynamics
+With Silico, we unified collision detection and contact dynamics into a single optimization problem. With this novel formulation, we can smoothly differentiate through contact dynamics for objects of arbitrary shapes. Previous differentiable physics formulations were limited to simple shape primitives.
+{: style="text-align: justify;"}
+
+<!-- <figure style="width: 600px" class="align-center"> -->
+<figure class="align-center">
+    <img 
+        src="{{ site.url }}{{ site.baseurl }}/assets/papers/silico/rrt_grasping.gif"
+        alt="rrt_grasping.gif" 
+    />
+    <figcaption>Grasping behavior obtained leaveraging a sampling-based planner and smoothly differentiable joint collision detection and contact simulation.</figcaption>
+</figure> 
+
+
+## Differentiable physics engine
+With Dojo, we took a physics- and optimization-first apporaches to some of the limitations of the current physics engines. In particular, we can provide informative gradient through contact dynamics. Contrary to simulators relying on soft-contact models, Dojo can simulate hard contact interactions. It does not need to approximate the friction cone to simulate sliding behavior.
+{: style="text-align: justify;"}
+
+<!-- <figure style="width: 600px" class="align-center"> -->
+<figure class="align-center">
+    <img 
+        src="{{ site.url }}{{ site.baseurl }}/assets/papers/dojo/springy_quadruped.gif"
+        style="height: 530px; object-fit: cover; object-position: 0 100%;" 
+        alt="springy_quadruped.gif" 
+    />
+    <figcaption>Differentiable simulation of a Unitree A1 quadruped in Dojo.</figcaption>
+</figure> 
+
+
+## Simulating neural objects contact interactions
+We proposed a simple approach to neural object contact simulation. By augmenting a neural object with dynamics properties such as mass, inertia, coefficient of friction, we can simulate the object interaction with the environment, other objects or even oter neural objects.
+{: style="text-align: justify;"}
+
+<!-- <figure style="width: 600px" class="align-center"> -->
+<figure class="align-center">
+    <img 
+        src="{{ site.url }}{{ site.baseurl }}/assets/papers/dano/dano.gif"
+        alt="dano.gif" 
+    />
+    <figcaption>Sampling the neural object density field is the first step before simulating contact interactions.</figcaption>
+</figure> 
+
+
+
+## Optimizing through contact
+We leveraged differentiable contact simulation for control through contact. We embedded a differentiable physics engine into an online optimization pipeline.
+{: style="text-align: justify;"}
+
+<!-- <figure style="width: 600px" class="align-center"> -->
+<figure class="align-center">
+    <img 
+        src="{{ site.url }}{{ site.baseurl }}/assets/papers/cimpc/robust_trotting_lq.gif" 
+        alt="robust_trotting_lq.gif" 
+    />
+    <figcaption>The quadruped trots while we introduce some disturbances.</figcaption>
+</figure> 
+
+
+
 
 ## Learning Objective Functions
 We coupled an online estimation technique and a fast dynamic game solver to allow an autonomous driving vehicle to optimize its trajectory while learning the objective functions of the cars in its surroundings. It allows the autonomous vehicle to quickly identify the desired speed, desired lane and aggresiveness level of the vehicles it is interacting with. This gained information further improves the trajectory prediction ability of the autonomous vehicle.
@@ -64,6 +123,7 @@ We applied the Alternating Direction Method of Multipliers (ADMM) to solve optim
     />
     <figcaption>Fuel-optimal rendez-vous trajectory between two satellites.</figcaption>
 </figure> 
+
 
 
 
