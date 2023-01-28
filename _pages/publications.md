@@ -6,66 +6,82 @@ classes: wide
 ---
 
 
-**Single-Level Differentiable Contact Simulation** 
-[(paper)](https://arxiv.org/pdf/2212.06764.pdf)\
+**Single-Level Differentiable Contact Simulation**\
 Robotics and Automation Letters (RA-L 2023, submitted),\
-_**S. Le Cleac'h** M. Schwager, Z. Manchester, V. Sindhwani, P. Florence, S. Singh_
+_**S. Le Cleac'h** M. Schwager, Z. Manchester, V. Sindhwani, P. Florence, S. Singh_\
+[paper](https://arxiv.org/pdf/2212.06764.pdf){: .btn .btn--primary .btn--small}
+[video](https://youtu.be/oaGLTR13iF8){: .btn .btn--warning .btn--small}
 
 
 
-**Dojo: A Differentiable Physics Engine for Robotics**
-[(paper)](https://arxiv.org/pdf/2203.00806.pdf)\
+**Dojo: A Differentiable Physics Engine for Robotics**\
 Transactions on Robotics (T-RO 2023, submitted),\
-_**S. Le Cleac'h***, T. Howell*, Z. Kolter, M. Schwager, Z. Manchester_
+_**S. Le Cleac'h***, T. Howell*, Z. Kolter, M. Schwager, Z. Manchester_\
+[paper](https://arxiv.org/pdf/2203.00806.pdf){: .btn .btn--primary .btn--small}
+[video](https://youtu.be/brNzbMxZ0y0){: .btn .btn--warning .btn--small}
+[talk](https://youtu.be/TRtOESXJxJQ){: .btn .btn--info .btn--small}
 
 
-**Differentiable Physics Simulation of Dynamics-Augmented Neural Objects**
-[(paper)](https://arxiv.org/pdf/2210.09420.pdf)\
+
+**Differentiable Physics Simulation of Dynamics-Augmented Neural Objects**\
 Robotics and Automation Letters (RA-L 2023, submitted),\
-_**S. Le Cleac'h**, H. Yu, M. Guo, T. Howell, R. Gao, J. Wu, Z. Manchester, M. Schwager_
+_**S. Le Cleac'h**, H. Yu, M. Guo, T. Howell, R. Gao, J. Wu, Z. Manchester, M. Schwager_\
+[paper](https://arxiv.org/pdf/2210.09420.pdf){: .btn .btn--primary .btn--small}
+[video](https://youtu.be/Md0PM-wv_Xg){: .btn .btn--warning .btn--small}
+[poster](https://docs.google.com/presentation/d/14_dLVGmXb5Y0YpDZdI-HyH2D16YB7iIu72HHW8df6Qg/edit?usp=sharing){: .btn .btn--success .btn--small}
 
 
-**Fast Contact-Implicit Model Predictive Control**
-[(paper)](https://arxiv.org/pdf/2107.05616.pdf)\
+**Fast Contact-Implicit Model Predictive Control**\
 Transactions on Robotics (T-RO 2023, submitted),\
-_**S. Le Cleac'h***, T. Howell*, S. Yang, C. Lee, J. Zhang, A. Bishop, M. Schwager, Z. Manchester_
+_**S. Le Cleac'h***, T. Howell*, S. Yang, C. Lee, J. Zhang, A. Bishop, M. Schwager, Z. Manchester_\
+[paper](https://arxiv.org/pdf/2107.05616.pdf){: .btn .btn--primary .btn--small}
+[video](https://youtu.be/v80wOXKqDsA){: .btn .btn--warning .btn--small}
+[talk](https://youtu.be/CshPn-zp3wE){: .btn .btn--info .btn--small}
+[poster](https://docs.google.com/presentation/d/1LGLuUVgLZlvYkQJFeRqih6n-POKYpDpZ6_BQuaghM7o/edit?usp=sharing){: .btn .btn--success .btn--small}
 
 
 
-**Trajectory Optimization with Optimization-Based Dynamics**
-[(paper)](http://roboticexplorationlab.org/papers/optimization_dynamics.pdf)\
+**Trajectory Optimization with Optimization-Based Dynamics**\
 International Conference on Robotics and Automation (RA-L & ICRA 2022),\
-_T. Howell, **S. Le Cleac'h**, M. Schwager, Z. Manchester_
+_T. Howell, **S. Le Cleac'h**, M. Schwager, Z. Manchester_\
+[paper](http://roboticexplorationlab.org/papers/optimization_dynamics.pdf){: .btn .btn--primary .btn--small}
 
 
 
-**ALGAMES: A Fast Augmented Lagrangian Solver for Constrained Dynamic Games**
-[(paper)](http://roboticexplorationlab.org/papers/algames_auro.pdf)\
+**ALGAMES: A Fast Augmented Lagrangian Solver for Constrained Dynamic Games**\
 Autonomous Robots (AuRo 2021),\
-_**S. Le Cleac'h**, M. Schwager, Z. Manchester_
+_**S. Le Cleac'h**, M. Schwager, Z. Manchester_\
+[paper](http://roboticexplorationlab.org/papers/algames_auro.pdf){: .btn .btn--primary .btn--small}
+[video](https://youtu.be/86zFjuLxiw0){: .btn .btn--warning .btn--small}
+[poster](https://docs.google.com/presentation/d/1L__swWDXXGQ7QQzgdk3GX09GMwZitt6W39iFpUmUTIw/edit?usp=sharing){: .btn .btn--success .btn--small}
 
 
 
-**LUCIDGames: Online Unscented Inverse Dynamic Games for Adaptive Trajectory Prediction and Planning**
-[(paper)](https://arxiv.org/pdf/2011.08152.pdf)\
+**LUCIDGames: Online Unscented Inverse Dynamic Games for Adaptive Trajectory Prediction and Planning**\
 Conference on Robotics and Automation (RA-L & ICRA 2021),\
-_**S. Le Cleac'h**, M. Schwager, Z. Manchester_
+_**S. Le Cleac'h**, M. Schwager, Z. Manchester_\
+[paper](https://arxiv.org/pdf/2011.08152.pdf){: .btn .btn--primary .btn--small}
+[video](https://youtu.be/jRAF3HU2Y5k){: .btn .btn--warning .btn--small}
 
 
 
-**Robust Entry Vehicle Guidance with Sampling-Based Invariant Funnels**
-[(paper)](https://arxiv.org/pdf/2011.02441.pdf)\
+**Robust Entry Vehicle Guidance with Sampling-Based Invariant Funnels**\
 IEEE Aerospace Conference (AeroConf 2021),\
-_R. Derollez, **S. Le Cleac'h**, Z. Manchester_
+_R. Derollez, **S. Le Cleac'h**, Z. Manchester_\
+[paper](https://arxiv.org/pdf/2011.02441.pdf){: .btn .btn--primary .btn--small}
 
 
-**ALGAMES: A Fast Solver for Constrained Dynamic Games**
-[(paper)](http://www.roboticsproceedings.org/rss16/p091.pdf)\
+
+**ALGAMES: A Fast Solver for Constrained Dynamic Games**\
 Robotics: Science and Systems (RSS 2020),\
-_**S. Le Cleac'h**, M. Schwager, Z. Manchester_
+_**S. Le Cleac'h**, M. Schwager, Z. Manchester_\
+[paper](http://www.roboticsproceedings.org/rss16/p091.pdf){: .btn .btn--primary .btn--small}
+[video](https://youtu.be/86zFjuLxiw0){: .btn .btn--warning .btn--small}
+[poster](https://docs.google.com/presentation/d/1L__swWDXXGQ7QQzgdk3GX09GMwZitt6W39iFpUmUTIw/edit?usp=sharing){: .btn .btn--success .btn--small}
 
 
-**Fast Solution of Optimal Control Problems with L1 Cost**
-[(paper)](http://roboticexplorationlab.org/papers/l1-cost-optimizer.pdf)\
+
+**Fast Solution of Optimal Control Problems with L1 Cost**\
 Astrodynamics Specialist Conference (AAS/AIAA 2019),\
-_**S. Le Cleac'h**, Z. Manchester_
+_**S. Le Cleac'h**, Z. Manchester_\
+[paper](http://roboticexplorationlab.org/papers/l1-cost-optimizer.pdf){: .btn .btn--primary .btn--small}
