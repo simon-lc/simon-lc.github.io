@@ -29,7 +29,7 @@ With Silico, we unified collision detection and contact dynamics into a single o
 
 
 ## Differentiable physics engine
-With Dojo, we took a physics- and optimization-first apporaches to some of the limitations of the current physics engines. In particular, we can provide informative gradient through contact dynamics. Contrary to simulators relying on soft-contact models, Dojo can simulate hard contact interactions. It does not need to approximate the friction cone to simulate sliding behavior.
+With Dojo, we took a physics- and optimization-first approach to address some of the limitations of the current physics engines. In particular, we can provide informative gradients through contact dynamics. Contrary to simulators relying on soft-contact models, Dojo can simulate hard contact interactions. Additionally, it does not need to approximate the friction cone to simulate sliding behavior.
 {: style="text-align: justify;"}
 
 <!-- <figure style="width: 600px" class="align-center"> -->
