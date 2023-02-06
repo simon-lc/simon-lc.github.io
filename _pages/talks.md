@@ -6,6 +6,11 @@ classes: wide
 ---
 
 
+**Joint Prediction and Planning for Autonomous Vehicles.**\
+Nvidia Self-Driving Vehicles.\
+_January 2023_\
+[slides](https://docs.google.com/presentation/d/13qn21ZWIqEbKvGYmosH9A0c4WsiOJc15yfyASFPiAnw/edit?usp=sharing){: .btn .btn--primary .btn--small}
+
 **Composable Optimization for Robotics Simulation and Control.**\
 PhD Defense, Stanford.\
 _January 2023_\
