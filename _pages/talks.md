@@ -6,6 +6,11 @@ classes: wide
 ---
 
 
+**Control Through Contact via Differentiable Optimization.**\
+Honda Research Institute.\
+_February 2023_\
+[slides](https://docs.google.com/presentation/d/1oTXj23Xi4I9vgAA1MBYMiKb_fu6iVMuArDsf77xMeEI/edit?usp=sharing){: .btn .btn--primary .btn--small}
+
 **Joint Prediction and Planning for Autonomous Vehicles.**\
 Nvidia Self-Driving Vehicles.\
 _January 2023_\
