@@ -6,6 +6,11 @@ classes: wide
 ---
 
 
+**Numerical Optimization for Robotics Control and Simulation.**\
+Honda Research Institute.\
+_March 2023_\
+[slides](https://docs.google.com/presentation/d/1WocviY-Xf0oH-YWncYMG0rVJWaWFtBMW2vPMEylzh70/edit?usp=sharing){: .btn .btn--primary .btn--small}
+
 **Control Through Contact via Differentiable Optimization.**\
 Honda Research Institute.\
 _February 2023_\
