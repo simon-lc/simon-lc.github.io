@@ -7,7 +7,7 @@ classes: wide
 
 
 **Numerical Optimization for Robotics Control and Simulation.**\
-Honda Research Institute.\
+Boston Dynamics AI Institute.\
 _March 2023_\
 [slides](https://docs.google.com/presentation/d/1WocviY-Xf0oH-YWncYMG0rVJWaWFtBMW2vPMEylzh70/edit?usp=sharing){: .btn .btn--primary .btn--small}
 
