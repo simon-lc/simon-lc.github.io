@@ -11,6 +11,8 @@ My research focuses on developing fast optimization algorithms for simulation, p
 {: style="text-align: justify;"}
 
 
+{% include 03bil.html %} 
+
 
 # Portfolio
 
