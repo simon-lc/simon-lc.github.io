@@ -198,14 +198,40 @@
 		}
 
 		class ConstrainedSolver {
-			constructor(context, residual, jacobian, constrained_indices, tolerance = 1e-5, maxIterations = 20, regularization = 1e-3) {
+			constructor(
+				context,
+				residual,
+				jacobian,
+				constrained_indices,
+				tolerance = 1e-5,
+				maxIterations = 20,
+				regularization = 1e-3,
+			) {
 				this.context = context;
 				this.residualFunction = residual;
 				this.jacobianFunction = jacobian;
 				this.constrained_indices = constrained_indices;
 				this.tolerance = tolerance;
 				this.maxIterations = maxIterations;
-				this.regularization = regularization
+				this.regularization = regularization;
+				this.rho = 1.0;
+			}
+
+			project(x) {
+				const indices = this.constrained_indices;
+				x.set(indices, numeric.min(x.get(indices), 1e-2));
+			}
+
+			update_step_size(x, dx, alpha) {
+				for (let i = 0; i < this.constrained_indices.length; i++) {
+					const index = this.constrained_indices[i];
+					const xi = x[index];
+					const dxi = dx[index];
+					if (dxi < 0) {
+						alpha = Math.min(alpha, - xi / dxi)
+					}
+				}
+				return alpha;
 			}
 
 			solve(initialGuess) {
@@ -223,7 +249,7 @@
 
 					// Calculate the absolute norm of the residual vector
 					const residualNorm = numeric.norm2(r);
-					console.log("residual norm", residualNorm);
+					// console.log("residual norm", residualNorm);
 					context.font = '20px Arial'; // Set the font size and family
 					this.context.fillText(residualNorm, 50, 50 + 20 * i);
 
@@ -234,10 +260,14 @@
 
 					// Update x using Newton's method for vectors
 					const JInverse = numeric.inv(J);
-					const update = numeric.dot(JInverse, r);
+					const update = numeric.mul(-1.0, numeric.dot(JInverse, r));
+					// console.log("update", update)
 					// Update vector x
-					const scaleFactor = -1.0;
-					x = numeric.add(x, numeric.mul(update, scaleFactor));
+					const alpha = this.update_step_size(x, update, 1.0)
+					console.log("alpha", alpha)
+					x = numeric.add(x, numeric.mul(update, alpha));
+					// x = numeric.add(x, numeric.mul(update, 0.5));
+					// console.log("x", x)
 				}
 
 				// If maxIterations reached, return the latest approximation
@@ -307,30 +337,27 @@
 			}
 
 
-			// // Example usage:
-			// const residualFunction = x => x ** 2 - 4; // Example: solving for sqrt(4)
-			// const jacobianFunction = x => 2 * x;
-
-			// const solver = new NewtonSolver(context, residualFunction, jacobianFunction, tolerance = 1e-6, maxIterations = 30);
-			// const [result, elapsedTime, iterations] = solver.solve(Math.random());
-
-			// console.log("Time taken:", elapsedTime, "milliseconds");
-			// console.log("iterations:", iterations);
-
 			// // Assuming that context is defined elsewhere in your code
 			context.font = '20px Arial'; // Set the font size and family
 
-
 			// Example usage:
-			const residualFunction = x => [x[0] ** 2 - 4, x[1] ** 2 - 9]; // Example: solving for [sqrt(4), sqrt(9)]
-			const jacobianFunction = x => [[2 * x[0], 0], [0, 2 * x[1]]];
-
-			const solver = new NewtonSolver(context, residualFunction, jacobianFunction, 1e-6, 20, 1e-3);
+			const residualFunction = x => [(x[0] + 3) ** 2 - 4, x[1] ** 2 - 9]; // Example: solving for [sqrt(4), sqrt(9)]
+			const jacobianFunction = x => [[2 * (x[0] + 3), 0], [0, 2 * x[1]]];
+			const constrained_indices = [0];
+			const solver = new ConstrainedSolver(
+				context,
+				residualFunction,
+				jacobianFunction,
+				constrained_indices,
+				tolerance = 1e-5,
+				maxIterations = 20,
+				regularization = 1e-3,
+			);
 			const [result, elapsedTime, iterations] = solver.solve([Math.random(), Math.random()]);
 
-			console.log("Approximate solution:", result);
-			console.log("Time taken:", elapsedTime, "milliseconds");
-			console.log("Iterations:", iterations);
+			// console.log("Approximate solution:", result);
+			// console.log("Time taken:", elapsedTime, "milliseconds");
+			// console.log("Iterations:", iterations);
 			context.fillText(result[0], 300, 50);
 			context.fillText(result[1], 300, 70);
 		}
