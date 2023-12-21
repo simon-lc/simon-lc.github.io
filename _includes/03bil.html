@@ -219,11 +219,12 @@
 
 				// dimensions
 				this.num_primals = num_primals
-				this.num_slacks = num_constraints
 				this.num_duals = num_constraints
-				this.num_vars = this.num_primals + this.num_slacks + this.num_duals
+				this.num_slacks = num_constraints
+				this.num_vars = this.num_primals + this.num_duals + this.num_slacks
 
 				// storage
+				this.z = numeric.rep([this.num_vars], 0);
 				this.residual = numeric.rep([this.num_vars], 0);
 				this.jacobian = numeric.rep([this.num_vars, this.num_vars], 0);
 
@@ -234,6 +235,67 @@
 				this.rho = 1.0;
 			}
 
+			multiply(a, b) {
+				return a.map((e, i) => e * b[i]);
+			}
+			get_primals() {
+				return numeric.clone(this.z).slice(0, this.num_primals);
+			}
+			get_duals() {
+				return numeric.clone(this.z).slice(this.num_primals, this.num_primals + this.num_duals);
+			}
+			get_slacks() {
+				return numeric.clone(this.z).slice(this.num_primals + this.num_duals, this.num_vars);
+			}
+
+			set_residual() {
+				var x = this.get_primals();
+				var g = this.get_duals();
+				var s = this.get_slacks();
+
+				var res_x = this.objective_gradient(x) + numeric.mul(-1.0, numeric.dot(this.constraint_gradient(x), g));
+				var res_g = s + numeric.mul(-1.0, this.constraint(x));
+				var res_s = this.multiply(g, s) + numeric.rep([this.num_duals], -this.rho);
+
+				numeric.set(this.residual, [0, this.num_primals], res_x);
+				numeric.set(this.residual, [this.num_primals, this.num_primals + this.num_duals], res_g);
+				numeric.set(this.residual, [this.num_primals + this.num_duals, this.num_vars], res_s);
+			}
+
+			set_residual_jacobian() {
+				let nx = this.num_primals
+				let ng = this.num_duals
+				let nz = this.num_vars
+				var x = this.get_primals();
+				var g = this.get_duals();
+				var s = this.get_slacks();
+
+				var res_x = this.objective_gradient(x) + numeric.mul(-1.0, numeric.dot(this.constraint_gradient(x), g));
+				var res_g = s + numeric.mul(-1.0, this.constraint(x));
+				var res_s = this.multiply(g, s) + numeric.rep([this.num_duals], -this.rho);
+
+				numeric.set(
+					this.residual_jacobian,
+					[0, nx],
+					[0, nx],
+					this.objective_hessian(x));
+				numeric.set(
+					this.residual_jacobian,
+					[0, nx],
+					[nx, nx + ng],
+					numeric.transpose(this.constraint_gradient(x)));
+				numeric.set(
+					this.residual_jacobian,
+					[nx, nx + ng],
+					[0, nx],
+					this.constraint_gradient(x));
+
+				for (var i = 0; i < ng; i++) {
+					numeric.set(this.residual_jacobian, [nx + i, nx + ng + i], 1.0);
+					numeric.set(this.residual_jacobian, [nx + ng + i, nx + i], s[i]);
+					numeric.set(this.residual_jacobian, [nx + ng + i, nx + ng + i], g[i]);
+				}
+			}
 
 
 			project(x) {
