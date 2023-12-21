@@ -200,22 +200,41 @@
 		class ConstrainedSolver {
 			constructor(
 				context,
-				residual,
-				jacobian,
-				constrained_indices,
+				objective_gradient,
+				objective_hessian,
+				constraint,
+				constraint_gradient,
+				num_primals,
+				num_constraints,
 				tolerance = 1e-5,
 				maxIterations = 20,
 				regularization = 1e-3,
 			) {
+				// methods
 				this.context = context;
-				this.residualFunction = residual;
-				this.jacobianFunction = jacobian;
-				this.constrained_indices = constrained_indices;
+				this.objective_gradient = objective_gradient;
+				this.objective_hessian = objective_hessian;
+				this.constraint = constraint;
+				this.constraint_gradient = constraint_gradient;
+
+				// dimensions
+				this.num_primals = num_primals
+				this.num_slacks = num_constraints
+				this.num_duals = num_constraints
+				this.num_vars = this.num_primals + this.num_slacks + this.num_duals
+
+				// storage
+				this.residual = numeric.rep([this.num_vars], 0);
+				this.jacobian = numeric.rep([this.num_vars, this.num_vars], 0);
+
+				// parameters
 				this.tolerance = tolerance;
 				this.maxIterations = maxIterations;
 				this.regularization = regularization;
 				this.rho = 1.0;
 			}
+
+
 
 			project(x) {
 				const indices = this.constrained_indices;
