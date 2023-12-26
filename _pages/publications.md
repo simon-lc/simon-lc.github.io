@@ -11,6 +11,9 @@ Robotics and Automation Letters (RA-L 2023, submitted),\
 _**S. Le Cleac'h** M. Schwager, Z. Manchester, V. Sindhwani, P. Florence, S. Singh_\
 [paper](https://arxiv.org/pdf/2212.06764.pdf){: .btn .btn--primary .btn--small}
 [video](https://youtu.be/oaGLTR13iF8){: .btn .btn--warning .btn--small}
+[poster](https://docs.google.com/presentation/d/1M58xeXz4Ml4axVEdvifAAvLlovBGkDFYUmkNnPX1KQc/edit?usp=sharing){: .btn .btn--success .btn--small}
+[slides](https://docs.google.com/presentation/d/1VcH0BcZowYIBvxFaIHeBpXEnf7wl1yKOOuZJBOoPkBs/edit?usp=sharing
+){: .btn .btn--danger .btn--small}
 
 
 
@@ -29,6 +32,8 @@ _**S. Le Cleac'h**, H. Yu, M. Guo, T. Howell, R. Gao, J. Wu, Z. Manchester, M. S
 [paper](https://arxiv.org/pdf/2210.09420.pdf){: .btn .btn--primary .btn--small}
 [video](https://youtu.be/Md0PM-wv_Xg){: .btn .btn--warning .btn--small}
 [poster](https://docs.google.com/presentation/d/14_dLVGmXb5Y0YpDZdI-HyH2D16YB7iIu72HHW8df6Qg/edit?usp=sharing){: .btn .btn--success .btn--small}
+[slides](https://docs.google.com/presentation/d/1uYU-7K42tEq_cMbQsqF0D9LvJEB9iEd8K-QTd2HC9cY/edit?usp=sharing){: .btn .btn--danger .btn--small}
+
 
 
 **Fast Contact-Implicit Model Predictive Control**\

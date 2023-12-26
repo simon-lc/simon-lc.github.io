@@ -16,7 +16,7 @@
 title: Simon Le Cleac'h
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Simon Le Cleac'h: optimization, robotics and control.
+  Simon Le Cleac'h: optimization and robot learning.
 # an awesome description for your new site here. You can edit this
 # line in _config.yml. It will appear in your document head meta (for
 # Google search results) and in your feed.xml site description.
@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Simon Le Cleac'h"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Optimization, robotics and control."
+  bio    : "Optimization and robot learning."
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
