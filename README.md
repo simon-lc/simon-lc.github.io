@@ -29,15 +29,18 @@ If you have a question about using Jekyll, start a discussion on the [Jekyll For
 
 ## Building locally
 - cd into the repo
-- bundle clean --force
-- bundle install
-- bundle exec jekyll serve --baseurl=""
-- the site is automatically updated when making changes to the files. 
-- change font types and sizes in /assets/css/main.scss
-- check this link for examples: [https://github.com/mmistakes/minimal-mistakes/tree/master/docs](https://github.com/mmistakes/minimal-mistakes/tree/master/docs)
-- [https://mmistakes.github.io/minimal-mistakes/year-archive/](https://mmistakes.github.io/minimal-mistakes/year-archive/)
-- check these links for templates:
-- [https://github.com/academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io)
-- [https://github.com/mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes)
+  - `bundle clean --force`
+  - `bundle install`
+  - `bundle exec jekyll serve --baseurl=""`
+- the site is automatically updated when making changes to the files.
 - generate gallery from folder `/assets/papers/dojo/`
-- ```find -maxdepth 1 -type f ! -name flist.txt -printf  "  - url: /assets/papers/dojo/%P\n    image_path: /assets/papers/dojo/%P\n    alt: \"%P\"\n    title: \"%P\"\n" > flist.txt```
+  - ```
+    find -maxdepth 1 -type f ! -name flist.txt -printf  "  - url: /assets/papers/dojo/%P\n    image_path: /assets/papers/dojo/%P\n    alt: \"%P\"\n    title: \"%P\"\n" > flist.txt
+    ```
+- change font types and sizes in `/assets/css/main.scss`
+- check this link for examples:
+  - [https://github.com/mmistakes/minimal-mistakes/tree/master/docs](https://github.com/mmistakes/minimal-mistakes/tree/master/docs)
+  - [https://mmistakes.github.io/minimal-mistakes/year-archive/](https://mmistakes.github.io/minimal-mistakes/year-archive/)
+- check these links for templates:
+  - [https://github.com/academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io)
+  - [https://github.com/mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes)
