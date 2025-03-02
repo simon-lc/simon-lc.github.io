@@ -6,9 +6,16 @@ classes: wide
 ---
 
 
+**Jacta: A Versatile Planner for Learning Dexterous and Whole-body Manipulation**\
+Robotics and Automation Letters (RA-L 2023, submitted),\
+_J. Brüdigam, A. Abbas, M. Sorokin, K. Fang, B. Hung, M. Guru, S. Sosnowski, J. Wang, S. Hirche, **S. Le Cleac'h**_\
+[paper](https://arxiv.org/pdf/2408.01258){: .btn .btn--primary .btn--small}
+[website](https://jacta-manipulation.github.io/){: .btn .btn--warning .btn--small}
+
+
 **Single-Level Differentiable Contact Simulation**\
 Robotics and Automation Letters (RA-L 2023, submitted),\
-_**S. Le Cleac'h** M. Schwager, Z. Manchester, V. Sindhwani, P. Florence, S. Singh_\
+_**S. Le Cleac'h**, M. Schwager, Z. Manchester, V. Sindhwani, P. Florence, S. Singh_\
 [paper](https://arxiv.org/pdf/2212.06764.pdf){: .btn .btn--primary .btn--small}
 [video](https://youtu.be/oaGLTR13iF8){: .btn .btn--warning .btn--small}
 [poster](https://docs.google.com/presentation/d/1M58xeXz4Ml4axVEdvifAAvLlovBGkDFYUmkNnPX1KQc/edit?usp=sharing){: .btn .btn--success .btn--small}

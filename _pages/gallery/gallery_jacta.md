@@ -48,3 +48,5 @@ gallery_jacta:
 
 <!-- Include the Gallery for GIFs (Keep this as is) -->
 {% include gallery id="gallery_jacta" %}
+
+[back to main gallery]({{ site.url }}{{ site.baseurl }}/gallery){: .btn .btn--primary .btn--small}

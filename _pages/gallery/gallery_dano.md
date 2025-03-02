@@ -36,3 +36,4 @@ gallery_dano:
 
 {% include gallery id="gallery_dano" %}
 
+[back to main gallery]({{ site.url }}{{ site.baseurl }}/gallery){: .btn .btn--primary .btn--small}

@@ -104,3 +104,4 @@ gallery_cimpc:
 
 {% include gallery id="gallery_cimpc" %}
 
+[back to main gallery]({{ site.url }}{{ site.baseurl }}/gallery){: .btn .btn--primary .btn--small}

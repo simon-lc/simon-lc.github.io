@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Simon Le Cleac'h"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Optimization and robot learning."
+  bio    : "Robot learning and optimization."
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
