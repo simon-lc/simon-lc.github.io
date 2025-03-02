@@ -29,9 +29,15 @@ If you have a question about using Jekyll, start a discussion on the [Jekyll For
 
 ## Building locally
 - cd into the repo
+  - `sudo apt update`
+  - `sudo apt-get install ruby-full`
+  - `sudo gem install bundler`
+  - `sudo bundle install`
   - `bundle clean --force`
-  - `bundle install`
   - `bundle exec jekyll serve --baseurl=""`
+
+
+
 - the site is automatically updated when making changes to the files.
 - generate gallery from folder `/assets/papers/dojo/`
   - ```

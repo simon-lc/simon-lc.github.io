@@ -1,0 +1,94 @@
+---
+permalink: /gallery/dojo-gallery/
+title: "Dojo gallery"
+layout: single
+classes: wide
+gallery_dojo:
+  - url: /assets/papers/dojo/quadruped_joint_limits.gif
+    image_path: /assets/papers/dojo/quadruped_joint_limits.gif
+    alt: "quadruped_joint_limits.gif"
+    title: "quadruped_joint_limits.gif"
+  - url: /assets/papers/dojo/ant_first_walk.gif
+    image_path: /assets/papers/dojo/ant_first_walk.gif
+    alt: "ant_first_walk.gif"
+    title: "ant_first_walk.gif"
+  - url: /assets/papers/dojo/atlas_6_steps.gif
+    image_path: /assets/papers/dojo/atlas_6_steps.gif
+    alt: "atlas_6_steps.gif"
+    title: "atlas_6_steps.gif"
+  - url: /assets/papers/dojo/springy_quadruped.gif
+    image_path: /assets/papers/dojo/springy_quadruped.gif
+    alt: "springy_quadruped.gif"
+    title: "springy_quadruped.gif"
+  - url: /assets/papers/dojo/fourbar_clean.gif
+    image_path: /assets/papers/dojo/fourbar_clean.gif
+    alt: "fourbar_clean.gif"
+    title: "fourbar_clean.gif"
+  - url: /assets/papers/dojo/halfcheetah_side.gif
+    image_path: /assets/papers/dojo/halfcheetah_side.gif
+    alt: "halfcheetah_side.gif"
+    title: "halfcheetah_side.gif"
+  - url: /assets/papers/dojo/tugbot_rope.gif
+    image_path: /assets/papers/dojo/tugbot_rope.gif
+    alt: "tugbot_rope.gif"
+    title: "tugbot_rope.gif"
+  - url: /assets/papers/dojo/atlas_drop_bw.gif
+    image_path: /assets/papers/dojo/atlas_drop_bw.gif
+    alt: "atlas_drop_bw.gif"
+    title: "atlas_drop_bw.gif"
+  - url: /assets/papers/dojo/springy_quadruped_lq.gif
+    image_path: /assets/papers/dojo/springy_quadruped_lq.gif
+    alt: "springy_quadruped_lq.gif"
+    title: "springy_quadruped_lq.gif"
+  - url: /assets/papers/dojo/halfhyena_single_regularized_policy.gif
+    image_path: /assets/papers/dojo/halfhyena_single_regularized_policy.gif
+    alt: "halfhyena_single_regularized_policy.gif"
+    title: "halfhyena_single_regularized_policy.gif"
+  - url: /assets/papers/dojo/quadruped_clean_gait_side.gif
+    image_path: /assets/papers/dojo/quadruped_clean_gait_side.gif
+    alt: "quadruped_clean_gait_side.gif"
+    title: "quadruped_clean_gait_side.gif"
+  - url: /assets/papers/dojo/halfhyena_policy_generalization.gif
+    image_path: /assets/papers/dojo/halfhyena_policy_generalization.gif
+    alt: "halfhyena_policy_generalization.gif"
+    title: "halfhyena_policy_generalization.gif"
+  - url: /assets/papers/dojo/quadruped_body_contact.gif
+    image_path: /assets/papers/dojo/quadruped_body_contact.gif
+    alt: "quadruped_body_contact.gif"
+    title: "quadruped_body_contact.gif"
+  - url: /assets/papers/dojo/quadruped_tuned_vs_tvlqr_facing.gif
+    image_path: /assets/papers/dojo/quadruped_tuned_vs_tvlqr_facing.gif
+    alt: "quadruped_tuned_vs_tvlqr_facing.gif"
+    title: "quadruped_tuned_vs_tvlqr_facing.gif"
+  - url: /assets/papers/dojo/atlas_tryna_jump.gif
+    image_path: /assets/papers/dojo/atlas_tryna_jump.gif
+    alt: "atlas_tryna_jump.gif"
+    title: "atlas_tryna_jump.gif"
+  - url: /assets/papers/dojo/dzhanibekov_square_lowres.gif
+    image_path: /assets/papers/dojo/dzhanibekov_square_lowres.gif
+    alt: "dzhanibekov_square_lowres.gif"
+    title: "dzhanibekov_square_lowres.gif"
+  - url: /assets/papers/dojo/geometry_learning_square.gif
+    image_path: /assets/papers/dojo/geometry_learning_square.gif
+    alt: "geometry_learning_square.gif"
+    title: "geometry_learning_square.gif"
+  - url: /assets/papers/dojo/panda_drop.gif
+    image_path: /assets/papers/dojo/panda_drop.gif
+    alt: "panda_drop.gif"
+    title: "panda_drop.gif"
+  - url: /assets/papers/dojo/atlas_6_steps_square.gif
+    image_path: /assets/papers/dojo/atlas_6_steps_square.gif
+    alt: "atlas_6_steps_square.gif"
+    title: "atlas_6_steps_square.gif"
+  - url: /assets/papers/dojo/cone_learning.gif
+    image_path: /assets/papers/dojo/cone_learning.gif
+    alt: "cone_learning.gif"
+    title: "cone_learning.gif"
+  - url: /assets/papers/dojo/cone_compare_square.gif
+    image_path: /assets/papers/dojo/cone_compare_square.gif
+    alt: "cone_compare_square.gif"
+    title: "cone_compare_square.gif"
+---
+
+{% include gallery id="gallery_dojo" %}
+

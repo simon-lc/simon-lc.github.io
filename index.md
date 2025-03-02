@@ -5,14 +5,30 @@ author_profile: true
 ---
 
 
-I am a Ph.D candidate in robotics and optimization at Stanford University. 
+I am a research scientist at the [Robotics and AI Institute](https://rai-inst.com/). My work combines machine learning, optimization, and computer vision to enhance robot capabilities in manipulation and locomotion. My goal is to bridge theoretical foundations with practical algorithmic solutions to enable robots to achieve human-level capabilities in whole-body manipulation within real-world environments.
 
-My research focuses on developing fast optimization algorithms for simulation, planning, and control for robotic systems. I am designing and implementing differentiable physics tools for trajectory tracking, planning and reinforcement learning tasks in robotic locomotion and manipulation. Previously, I implemented optimization algorithms enabling game-theoretic reasoning for autonomous vehicles.
+Previously, I focused on developing fast optimization algorithms for simulation, planning, and control of robotic systems. I also designed and implemented differentiable physics tools for trajectory tracking, planning, and reinforcement learning tasks in robotic locomotion and manipulation. Additionally, I developed optimization algorithms that enable game-theoretic reasoning for autonomous vehicles.
 {: style="text-align: justify;"}
 
 
 
 # Portfolio
+
+## Learning from planner demonstrations
+With Jacta, we combined reinforcement learning with sampling-based algorithms to solve contact-rich manipulation tasks. While sampling-based planners can quickly find successful trajectories for complex manipulation tasks, the solutions often lack robustness. We leveraged a reinforcement learning algorithm to enhance the robustness of a set of planner demonstrations, distilling them into a single policy.
+<figure class="align-center" style="max-width: 100%; margin: 0 auto;">
+    <video 
+        src="{{ site.url }}{{ site.baseurl }}/assets/papers/jacta/stool_lift.mp4" 
+        autoplay 
+        loop 
+        muted
+        controls
+        style="width: 100%; height: auto;"
+    >
+        Your browser does not support the video tag.
+    </video>
+    <figcaption>Contact-rich manipulation policy deployed on two Boston Dynamics Spot robots.</figcaption>
+</figure>
 
 ## Unified collision detection and contact dynamics
 With Silico, we unified collision detection and contact dynamics into a single optimization problem. With this novel formulation, we can smoothly differentiate through contact dynamics for objects of arbitrary shapes. Previous differentiable physics formulations were limited to simple shape primitives.
