@@ -16,14 +16,17 @@
 title: Simon Le Cleac'h
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Simon Le Cleac'h: optimization and robot learning.
+  Simon Le Cleac'h: robot learning and manipulation.
 # an awesome description for your new site here. You can edit this
 # line in _config.yml. It will appear in your document head meta (for
 # Google search results) and in your feed.xml site description.
-twitter_username: simonlc_
 github_username: simon-lc
+twitter_username: simonlc_
 minimal_mistakes_skin: default
 search: true
+search_full_content: true
+lunr:
+  search_within_pages: true
 
 # Build settings
 markdown: kramdown
@@ -63,9 +66,6 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Robot learning and optimization."
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/simonlc_"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/simon-lc/"
@@ -75,15 +75,15 @@ author:
     - label: "YouTube"
       icon: "fab fa-youtube"
       url: "https://www.youtube.com/@simonlc"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/simonlc_"
     # - label: "Instagram"
       # icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/simonlc_"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/simon-lc/"
@@ -93,6 +93,9 @@ footer:
     - label: "YouTube"
       icon: "fab fa-youtube"
       url: "https://www.youtube.com/@simonlc"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/simonlc_"
     # - label: "Instagram"
       # icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"

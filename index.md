@@ -1,6 +1,7 @@
 ---
 permalink: /
 title: "Bio"
+seo_title: "Simon Le Cleac'h"
 author_profile: true
 ---
 
@@ -18,7 +19,7 @@ Previously, I focused on developing fast optimization algorithms for simulation,
 With Jacta, we combined reinforcement learning with sampling-based algorithms to solve contact-rich manipulation tasks. While sampling-based planners can quickly find successful trajectories for complex manipulation tasks, the solutions often lack robustness. We leveraged a reinforcement learning algorithm to enhance the robustness of a set of planner demonstrations, distilling them into a single policy.
 <figure class="align-center" style="max-width: 100%; margin: 0 auto;">
     <video 
-        src="{{ site.url }}{{ site.baseurl }}/assets/papers/jacta/stool_lift.mp4" 
+        src="{{ site.url }}{{ site.baseurl }}/assets/papers/jacta/stool_lift_lq.mp4" 
         autoplay 
         loop 
         muted
@@ -36,10 +37,13 @@ With Silico, we unified collision detection and contact dynamics into a single o
 
 <!-- <figure style="width: 600px" class="align-center"> -->
 <figure class="align-center">
-    <img 
-        src="{{ site.url }}{{ site.baseurl }}/assets/papers/silico/rrt_grasping.gif"
-        alt="rrt_grasping.gif" 
-    />
+    <video 
+        src="{{ site.url }}{{ site.baseurl }}/assets/papers/silico/rrt_grasping_lq.mp4"
+        autoplay loop muted playsinline
+        style="width: 100%; height: auto;"
+    >
+        Your browser does not support the video tag.
+    </video>
     <figcaption>Grasping behavior obtained with a sampling-based planner leveraging smoothly differentiable collision detection and contact simulation.</figcaption>
 </figure> 
 
@@ -51,10 +55,13 @@ With Dojo, we took a physics- and optimization-first approach to address some of
 <!-- <figure style="width: 600px" class="align-center"> -->
 <!-- style="height: 530px; object-fit: cover; object-position: 0 100%;"  -->
 <figure class="align-center">
-    <img 
-        src="{{ site.url }}{{ site.baseurl }}/assets/papers/dojo/springy_quadruped.gif"
-        alt="springy_quadruped.gif" 
-    />
+    <video 
+        src="{{ site.url }}{{ site.baseurl }}/assets/papers/dojo/springy_quadruped_lq.mp4"
+        autoplay loop muted playsinline
+        style="width: 100%; height: auto;"
+    >
+        Your browser does not support the video tag.
+    </video>
     <figcaption>Differentiable simulation of a Unitree A1 quadruped in Dojo.</figcaption>
 </figure> 
 
@@ -65,10 +72,13 @@ We proposed a simple approach to neural object contact simulation. By augmenting
 
 <!-- <figure style="width: 600px" class="align-center"> -->
 <figure class="align-center">
-    <img 
-        src="{{ site.url }}{{ site.baseurl }}/assets/papers/dano/dano.gif"
-        alt="dano.gif" 
-    />
+    <video 
+        src="{{ site.url }}{{ site.baseurl }}/assets/papers/dano/dano_lq.mp4"
+        autoplay loop muted playsinline
+        style="width: 100%; height: auto;"
+    >
+        Your browser does not support the video tag.
+    </video>
     <figcaption>Sampling the neural object density field is the first step before simulating contact interactions.</figcaption>
 </figure> 
 
@@ -80,10 +90,13 @@ We leveraged differentiable contact simulation for control through contact. We e
 
 <!-- <figure style="width: 600px" class="align-center"> -->
 <figure class="align-center">
-    <img 
-        src="{{ site.url }}{{ site.baseurl }}/assets/papers/cimpc/robust_trotting_lq.gif" 
-        alt="robust_trotting_lq.gif" 
-    />
+    <video 
+        src="{{ site.url }}{{ site.baseurl }}/assets/papers/cimpc/robust_trotting_lq_lq.mp4"
+        autoplay loop muted playsinline
+        style="width: 100%; height: auto;"
+    >
+        Your browser does not support the video tag.
+    </video>
     <figcaption>The quadruped trots while we introduce some disturbances.</figcaption>
 </figure> 
 
@@ -96,10 +109,13 @@ We coupled an online estimation technique and a fast dynamic game solver to allo
 
 <!-- <figure style="width: 600px" class="align-center"> -->
 <figure class="align-center">
-    <img 
-        src="{{ site.url }}{{ site.baseurl }}/assets/papers/lucidgames/LUCIDGames.gif" 
-        alt="LUCIDGames.gif" 
-    />
+    <video 
+        src="{{ site.url }}{{ site.baseurl }}/assets/papers/lucidgames/LUCIDGames_lq.mp4"
+        autoplay loop muted playsinline
+        style="width: 100%; height: auto;"
+    >
+        Your browser does not support the video tag.
+    </video>
     <figcaption>Orange estimates if blue will accelerate of slow down to let it go first.</figcaption>
 </figure> 
 
@@ -111,10 +127,13 @@ We developed fast solver for constrained dynamic games and applied it to complex
 
 <!-- <figure style="width: 600px" class="align-center"> -->
 <figure class="align-center">
-    <img 
-        src="{{ site.url }}{{ site.baseurl }}/assets/papers/algames/algames_4p.gif" 
-        alt="algames_4p.gif" 
-    />
+    <video 
+        src="{{ site.url }}{{ site.baseurl }}/assets/papers/algames/algames_4p_lq.mp4"
+        autoplay loop muted playsinline
+        style="width: 100%; height: auto;"
+    >
+        Your browser does not support the video tag.
+    </video>
     <figcaption>Vehicles negotiating right-of-way on a highway ramp.</figcaption>
 </figure> 
 
@@ -142,10 +161,13 @@ We applied the Alternating Direction Method of Multipliers (ADMM) to solve optim
 
 <!-- <figure style="width: 600px" class="align-center"> -->
 <figure class="align-center">
-    <img 
-        src="{{ site.url }}{{ site.baseurl }}/assets/papers/l1_cost/l1_cost.gif" 
-        alt="l1_cost.gif" 
-    />
+    <video 
+        src="{{ site.url }}{{ site.baseurl }}/assets/papers/l1_cost/l1_cost_lq.mp4"
+        autoplay loop muted playsinline
+        style="width: 100%; height: auto;"
+    >
+        Your browser does not support the video tag.
+    </video>
     <figcaption>Fuel-optimal rendez-vous trajectory between two satellites.</figcaption>
 </figure> 
 

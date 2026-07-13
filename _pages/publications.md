@@ -4,17 +4,47 @@ title: "Publications"
 layout: single
 classes: wide
 ---
+**Sumo: Dynamic and Generalizable Whole-Body Loco-Manipulation**\
+Under Review (2026),\
+_J. Zhang, M. Sorokin, J. Brüdigam, B. Hung, S. Phillips, D. Yershov, F. Niroui, T. Zhao, L. Fermoselle, X. Zhu, C. Cao, D. Ta, T. Pang, J. Wang, P. Culbertson, Z. Manchester, **S. Le Cleac'h**_\
+[paper](https://arxiv.org/pdf/2604.08508){: .btn .btn--primary .btn--small}
+[website](https://sumo.rai-inst.com/){: .btn .btn--info .btn--small}
+
+
+
+**Generative Models From and For Sampling-Based MPC: A Bootstrapped Approach for Adaptive Contact-Rich Manipulation**\
+Robotics and Automation Letters (RA-L 2026),\
+_L. Brudermüller, B. Hung, X. Zhu, J. Wang, N. Hawes, P. Culbertson, **S. Le Cleac'h**_\
+[paper](https://arxiv.org/pdf/2510.14643){: .btn .btn--primary .btn--small}
+
+
+
+**Judo: A User-Friendly Open-Source Package for Sampling-Based Model Predictive Control**\
+International Conference on Robotics and Automation (ICRA 2026)
+_A. Li, B. Hung, A. Ames, J. Wang, **S. Le Cleac'h**, P. Culbertson_\
+[paper](https://arxiv.org/pdf/2506.17184){: .btn .btn--primary .btn--small}
+[code](https://github.com/bdaiinstitute/judo){: .btn .btn--success .btn--small}
+<!-- RSS 2025 Workshop on Fast Motion Planning and Control in the Era of Parallelism,\ -->
+
+
+
+**Versatile Loco-Manipulation through Flexible Interlimb Coordination**\
+9th Annual Conference on Robot Learning (CoRL 2025 Oral),\
+_X. Zhu, Y. Chen, L. Sun, F. Niroui, **S. Le Cleac'h**, J. Wang, K. Fang_\
+[paper](https://arxiv.org/pdf/2506.07876){: .btn .btn--primary .btn--small}
+[website](https://relic-locoman.github.io){: .btn .btn--info .btn--small}
+
 
 
 **Jacta: A Versatile Planner for Learning Dexterous and Whole-body Manipulation**\
-Robotics and Automation Letters (RA-L 2023, submitted),\
+8th Annual Conference on Robot Learning (CoRL 2024),\
 _J. Brüdigam, A. Abbas, M. Sorokin, K. Fang, B. Hung, M. Guru, S. Sosnowski, J. Wang, S. Hirche, **S. Le Cleac'h**_\
 [paper](https://arxiv.org/pdf/2408.01258){: .btn .btn--primary .btn--small}
-[website](https://jacta-manipulation.github.io/){: .btn .btn--warning .btn--small}
+[website](https://jacta-manipulation.github.io/){: .btn .btn--info .btn--small}
 
 
 **Single-Level Differentiable Contact Simulation**\
-Robotics and Automation Letters (RA-L 2023, submitted),\
+Robotics and Automation Letters (RA-L & IROS 2023),\
 _**S. Le Cleac'h**, M. Schwager, Z. Manchester, V. Sindhwani, P. Florence, S. Singh_\
 [paper](https://arxiv.org/pdf/2212.06764.pdf){: .btn .btn--primary .btn--small}
 [video](https://youtu.be/oaGLTR13iF8){: .btn .btn--warning .btn--small}
@@ -34,7 +64,7 @@ _**S. Le Cleac'h***, T. Howell*, Z. Kolter, M. Schwager, Z. Manchester_\
 
 
 **Differentiable Physics Simulation of Dynamics-Augmented Neural Objects**\
-Robotics and Automation Letters (RA-L 2023, submitted),\
+Robotics and Automation Letters (RA-L & IROS 2023),\
 _**S. Le Cleac'h**, H. Yu, M. Guo, T. Howell, R. Gao, J. Wu, Z. Manchester, M. Schwager_\
 [paper](https://arxiv.org/pdf/2210.09420.pdf){: .btn .btn--primary .btn--small}
 [video](https://youtu.be/Md0PM-wv_Xg){: .btn .btn--warning .btn--small}
@@ -44,7 +74,7 @@ _**S. Le Cleac'h**, H. Yu, M. Guo, T. Howell, R. Gao, J. Wu, Z. Manchester, M. S
 
 
 **Fast Contact-Implicit Model Predictive Control**\
-Transactions on Robotics (T-RO 2023, submitted),\
+Transactions on Robotics (T-RO 2023),\
 _**S. Le Cleac'h***, T. Howell*, S. Yang, C. Lee, J. Zhang, A. Bishop, M. Schwager, Z. Manchester_\
 [paper](https://arxiv.org/pdf/2107.05616.pdf){: .btn .btn--primary .btn--small}
 [video](https://youtu.be/v80wOXKqDsA){: .btn .btn--warning .btn--small}
