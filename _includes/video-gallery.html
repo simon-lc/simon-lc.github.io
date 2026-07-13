@@ -1,0 +1,27 @@
+{% comment %}
+Renders a responsive grid of looping, muted, autoplay videos from a gallery
+front-matter list (same schema as the theme's `gallery` include). Each item's
+`image_path` GIF is mapped to its compressed `_lq.mp4` sibling.
+Params:
+  id     - name of the front-matter key holding the list (default: "gallery")
+  layout - "half" for 2 columns; otherwise auto-fit grid
+{% endcomment %}
+{% assign gallery_id = include.id | default: "gallery" %}
+{% assign items = page[gallery_id] %}
+{% if include.layout == "half" %}
+  {% assign min_col = "45%" %}
+{% else %}
+  {% assign min_col = "280px" %}
+{% endif %}
+<div class="video-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax({{ min_col }}, 1fr)); gap: 20px; justify-items: center; margin-bottom: 40px;">
+  {% for item in items %}
+    {% assign video_src = item.image_path | replace: ".gif", "_lq.mp4" %}
+    <figure class="align-center" style="max-width: 100%; margin: 0;{% if item.style %} {{ item.style }}{% endif %}">
+      <video src="{{ video_src | relative_url }}" autoplay loop muted playsinline
+             style="width: 100%; height: auto;">
+        Your browser does not support the video tag.
+      </video>
+      {% if item.title %}<figcaption>{{ item.title }}</figcaption>{% endif %}
+    </figure>
+  {% endfor %}
+</div>
