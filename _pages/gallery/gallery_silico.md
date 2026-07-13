@@ -90,6 +90,6 @@ gallery_silico:
     title: "jenga_drop.gif"
 ---
 
-{% include gallery id="gallery_silico" %}
+{% include video-gallery.html id="gallery_silico" %}
 
 [back to main gallery]({{ site.url }}{{ site.baseurl }}/gallery){: .btn .btn--primary .btn--small}

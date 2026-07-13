@@ -3,13 +3,19 @@ permalink: /gallery/
 title: "Gallery"
 layout: single
 classes: wide
-gallery_jacta_video:
-  - video_path: /assets/papers/jacta/stool_lift.mp4
+gallery_jacta:
+  - url: /assets/papers/jacta/stool_lift.gif
+    image_path: /assets/papers/jacta/stool_lift.gif
     alt: "stool_lift.mp4"
-  - video_path: /assets/papers/jacta/ball_turn.mp4
+    title: "stool_lift.mp4"
+  - url: /assets/papers/jacta/ball_turn.gif
+    image_path: /assets/papers/jacta/ball_turn.gif
     alt: "ball_turn.mp4"
-  - video_path: /assets/papers/jacta/box_grasp.mp4
+    title: "ball_turn.mp4"
+  - url: /assets/papers/jacta/box_grasp.gif
+    image_path: /assets/papers/jacta/box_grasp.gif
     alt: "box_grasp.mp4"
+    title: "box_grasp.mp4"
 gallery_silico:
   - url: /assets/papers/silico/collision_split_fast.gif
     image_path: /assets/papers/silico/collision_split_fast.gif
@@ -79,49 +85,31 @@ gallery_algames:
 
 This is a quick selection of some of the animations I created so far.
 
-# Jacta [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/jacta-gallery){: .btn .btn--primary .btn--small}
-<!-- Video Gallery -->
-<div class="video-gallery" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; justify-items: center;">
-  {% for video in page.gallery_jacta_video %}
-    <figure class="align-center" style="max-width: 100%; margin: 0;">
-      <video 
-          src="{{ site.url }}{{ video.video_path }}" 
-          autoplay 
-          loop 
-          muted
-          controls
-          style="width: 100%; height: auto; cursor: pointer;" 
-          onclick="openModal('{{ site.url }}{{ video.video_path }}')"
-      >
-          Your browser does not support the video tag.
-      </video>
-      <figcaption>{{ video.title }}</figcaption>
-    </figure>
-  {% endfor %}
-</div>
+### Jacta [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/jacta-gallery){: .btn .btn--primary .btn--small}
+{% include video-gallery.html id="gallery_jacta" %}
 
 ***
 
-# Silico [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/silico-gallery){: .btn .btn--primary .btn--small}
-{% include gallery id="gallery_silico" %}
+### Silico [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/silico-gallery){: .btn .btn--primary .btn--small}
+{% include video-gallery.html id="gallery_silico" %}
 
 ***
 
-# Dojo [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/dojo-gallery){: .btn .btn--primary .btn--small}
-{% include gallery id="gallery_dojo" %}
+### Dojo [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/dojo-gallery){: .btn .btn--primary .btn--small}
+{% include video-gallery.html id="gallery_dojo" %}
 
 ***
 
-# Contact Implicit MPC [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/cimpc-gallery){: .btn .btn--primary .btn--small}
-{% include gallery id="gallery_cimpc" %}
+### Contact Implicit MPC [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/cimpc-gallery){: .btn .btn--primary .btn--small}
+{% include video-gallery.html id="gallery_cimpc" %}
 
 ***
 
-# Dynamics Augmented Neural Objects [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/dano-gallery){: .btn .btn--primary .btn--small}
-{% include gallery id="gallery_dano" %}
+### Dynamics Augmented Neural Objects [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/dano-gallery){: .btn .btn--primary .btn--small}
+{% include video-gallery.html id="gallery_dano" %}
 
 ***
 
-# Algames [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/algames-gallery){: .btn .btn--primary .btn--small}
-{% include gallery id="gallery_algames" %}
+### Algames [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/algames-gallery){: .btn .btn--primary .btn--small}
+{% include video-gallery.html id="gallery_algames" %}
 

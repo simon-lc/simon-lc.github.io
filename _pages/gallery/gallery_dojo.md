@@ -90,6 +90,6 @@ gallery_dojo:
     title: "cone_compare_square.gif"
 ---
 
-{% include gallery id="gallery_dojo" %}
+{% include video-gallery.html id="gallery_dojo" %}
 
 [back to main gallery]({{ site.url }}{{ site.baseurl }}/gallery){: .btn .btn--primary .btn--small}

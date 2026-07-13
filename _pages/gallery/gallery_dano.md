@@ -34,6 +34,6 @@ gallery_dano:
     title: "panda_arm.gif"
 ---
 
-{% include gallery id="gallery_dano" %}
+{% include video-gallery.html id="gallery_dano" %}
 
 [back to main gallery]({{ site.url }}{{ site.baseurl }}/gallery){: .btn .btn--primary .btn--small}

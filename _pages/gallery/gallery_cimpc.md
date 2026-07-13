@@ -102,6 +102,6 @@ gallery_cimpc:
     title: "centroidal_quadruped_push_recovery_force.gif"
 ---
 
-{% include gallery id="gallery_cimpc" %}
+{% include video-gallery.html id="gallery_cimpc" %}
 
 [back to main gallery]({{ site.url }}{{ site.baseurl }}/gallery){: .btn .btn--primary .btn--small}
