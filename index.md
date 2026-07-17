@@ -7,14 +7,14 @@ author_profile: true
 
 
 
-I lead the **whole-body manipulation team** at [Robotics and AI Institute (RAI Institute)](https://rai-inst.com/). My research combines **reinforcement learning, imitation learning**, and large-scale simulation to enhance robot capabilities in **manipulation** and locomotion. My goal is to bridge theoretical foundations with practical algorithmic solutions that enable robots to achieve human-level whole-body manipulation in real-world environments.
+I currently lead the **whole-body manipulation team** at [Robotics and AI Institute (RAI Institute)](https://rai-inst.com/). Our research combines **reinforcement learning, imitation learning**, and large-scale simulation to enhance robot capabilities in **manipulation** and locomotion. Our goal is to bridge theoretical foundations with practical algorithmic solutions that enable robots to achieve human-level whole-body manipulation in real-world environments.
 
 During my **PhD at Stanford** and as intern at **Google Robotics**, I built a **differentiable physics engine** from scratch, enabling gradients to propagate through contact dynamics for optimization and learning. 
 My research focused on developing fast optimization algorithms for simulation, planning, and control of robotic systems. I applied differentiable physics to trajectory optimization, planning, and reinforcement learning for locomotion and manipulation. I developed optimization algorithms that enable game-theoretic reasoning for autonomous vehicles.
 {: style="text-align: justify;"}
 
 
-# Portfolio
+# Highlight of the team
 ## Combining sampling and learning for dynamic whole-body manipulation
 <figure class="align-center" style="max-width: 100%; margin: 0 auto;">
     <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0;">
@@ -67,7 +67,7 @@ My research focused on developing fast optimization algorithms for simulation, p
   }
 })();
 </script>
-Highlight of the team, we combined reinforcement learning with sampling-based optimization to enable legged robots to dynamically manipulate large, heavy objects with coordinated use of their arms, legs, and body. We adopted a hierarchical architecture in which a learned locomotion policy handles balance and movement at the low level, while a high-level controller reasons about the task in a reduced space of base velocities and end-effector positions. Sampling-based control discovers forceful, multi-contact strategies by simulating many futures in parallel, allowing the robot to perform dynamic loco-manipulation at human cadence.
+In our latest project, we combined reinforcement learning with sampling-based optimization to enable legged robots to dynamically manipulate large, heavy objects with coordinated use of their arms, legs, and body. We adopted a hierarchical architecture in which a learned locomotion policy handles balance and movement at the low level, while a high-level controller reasons about the task in a reduced space of base velocities and end-effector positions. Sampling-based control discovers forceful, multi-contact strategies by simulating many futures in parallel, allowing the robot to perform dynamic loco-manipulation at human cadence.
 {: style="text-align: justify;"}
 
 
