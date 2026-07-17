@@ -71,3 +71,17 @@ figcaption {
   margin-top: 0px;
   color: #444; /* Adjust color if needed */
 }
+
+.btn--youtube {
+  background-color: #ff0000;
+  color: #fff;
+
+  &:visited {
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: #cc0000;
+    color: #fff;
+  }
+}
