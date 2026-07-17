@@ -11,7 +11,7 @@ classes: wide
 </figure>
 
 
-A framework that steers a learned whole-body policy with a sampling-based reactive controller, letting legged robots dynamically manipulate large, heavy objects at human cadence.
+A framework that steers a learned whole-body policy with a sampling-based reactive controller, letting legged robots dynamically manipulate large, heavy objects at human cadence. More details in the [blog post](https://rai-inst.com/resources/blog/combining-sampling-and-learning-for-dynamic-whole-body-manipulation/).
 
 [video](https://www.youtube.com/watch?v=nM_ZHzp8nQA){: .btn .btn--info .btn--small}
 [blog post](https://rai-inst.com/resources/blog/combining-sampling-and-learning-for-dynamic-whole-body-manipulation/){: .btn .btn--success .btn--small}

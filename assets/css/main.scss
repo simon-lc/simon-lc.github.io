@@ -49,14 +49,14 @@ $h-size-6: 1em !default;
 @import "minimal-mistakes";
 
 html {
-    font-size: 9px; // change to whatever
+    font-size: 16px; // base size for narrow/mobile widths (sidebar hidden)
   
     @include breakpoint($medium) {
-      font-size: 9px; // change to whatever
+      font-size: 16px;
     }
   
     @include breakpoint($large) {
-      font-size: 16px; // change to whatever
+      font-size: 16px; // sidebar appears here
     }
   
     @include breakpoint($x-large) {

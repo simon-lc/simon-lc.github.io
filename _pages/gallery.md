@@ -3,6 +3,19 @@ permalink: /gallery/
 title: "Gallery"
 layout: single
 classes: wide
+gallery_dynamic:
+  - url: /assets/release/spot_smpc/spot_tire_upright_lq.mp4
+    image_path: /assets/release/spot_smpc/spot_tire_upright_lq.mp4
+    alt: "spot_tire_upright.mp4"
+    title: "spot_tire_upright.mp4"
+  - url: /assets/release/spot_smpc/spot_rl_training_lq.mp4
+    image_path: /assets/release/spot_smpc/spot_rl_training_lq.mp4
+    alt: "spot_rl_training.mp4"
+    title: "spot_rl_training.mp4"
+  - url: /assets/release/spot_smpc/spot_tire_roll_lq.mp4
+    image_path: /assets/release/spot_smpc/spot_tire_roll_lq.mp4
+    alt: "spot_tire_roll.mp4"
+    title: "spot_tire_roll.mp4"
 gallery_jacta:
   - url: /assets/papers/jacta/stool_lift.gif
     image_path: /assets/papers/jacta/stool_lift.gif
@@ -84,6 +97,11 @@ gallery_algames:
 ---
 
 This is a quick selection of some of the animations I created so far.
+
+### Dynamic Manipulation [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/dynamic-manipulation){: .btn .btn--primary .btn--small}
+{% include video-gallery.html id="gallery_dynamic" %}
+
+***
 
 ### Jacta [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/jacta-gallery){: .btn .btn--primary .btn--small}
 {% include video-gallery.html id="gallery_jacta" %}
