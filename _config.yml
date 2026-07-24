@@ -19,15 +19,24 @@ url: "https://simon-lc.github.io"
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Simon Le Cleac'h: robot learning and manipulation.
-# Paste the token from Google Search Console (Settings > Ownership verification > HTML tag)
-google_site_verification: "Dvdw0xkXQYe47ofW-JkRLyaflJO38ZzmwipdzM4t3ZQ"
-# <meta name="google-site-verification" content="Dvdw0xkXQYe47ofW-JkRLyaflJO38ZzmwipdzM4t3ZQ" />
 # an awesome description for your new site here. You can edit this
 # line in _config.yml. It will appear in your document head meta (for
 # Google search results) and in your feed.xml site description.
 github_username: simon-lc
 twitter_username: simonlc_
 minimal_mistakes_skin: default
+# Paste the token from Google Search Console (Settings > Ownership verification > HTML tag)
+google_site_verification: "Dvdw0xkXQYe47ofW-JkRLyaflJO38ZzmwipdzM4t3ZQ"
+
+# Google Analytics (GA4). Create a property at https://analytics.google.com,
+# add a "Web" data stream for https://simon-lc.github.io, and paste its
+# Measurement ID (looks like G-XXXXXXXXXX) below to enable full traffic tracking.
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-EP7S5PVHJR"
+    anonymize_ip: false
+
 search: true
 search_full_content: true
 lunr:
