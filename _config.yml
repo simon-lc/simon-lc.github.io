@@ -14,9 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Simon Le Cleac'h
+name: Simon Le Cleac'h
+url: "https://simon-lc.github.io"
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Simon Le Cleac'h: robot learning and manipulation.
+# Paste the token from Google Search Console (Settings > Ownership verification > HTML tag)
+google_site_verification: "Dvdw0xkXQYe47ofW-JkRLyaflJO38ZzmwipdzM4t3ZQ"
+# <meta name="google-site-verification" content="Dvdw0xkXQYe47ofW-JkRLyaflJO38ZzmwipdzM4t3ZQ" />
 # an awesome description for your new site here. You can edit this
 # line in _config.yml. It will appear in your document head meta (for
 # Google search results) and in your feed.xml site description.
@@ -40,17 +45,23 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 include:
   - _pages
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Exclude from processing so they don't become public pages / sitemap entries.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - PROMPT.md
+  - prompt.md
+  - README.md
+  - agent/
+  - _pages/about.md            # placeholder Lorem ipsum
+  - _pages/category-archive.md # dead archive (front matter commented out)
+  - _pages/tag-archive.md
+  - _pages/year-archive.md
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 # Plugins (previously gems:)
 plugins:
