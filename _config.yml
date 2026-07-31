@@ -84,7 +84,7 @@ plugins:
 author:
   name   : "Simon Le Cleac'h"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Robot learning and optimization."
+  bio    : "Stanford PhD in Robotics | ex-Google."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
