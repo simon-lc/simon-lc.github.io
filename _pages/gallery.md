@@ -3,17 +3,30 @@ permalink: /gallery/
 title: "Gallery"
 layout: single
 classes: wide
+gallery_perceptive:
+  - url: /assets/releases/spot_perceptive/skatepark_sequence_lq.mp4
+    image_path: /assets/releases/spot_perceptive/skatepark_sequence_lq.mp4
+    alt: "skatepark_sequence.mp4"
+    title: "skatepark_sequence.mp4"
+  - url: /assets/releases/spot_perceptive/perceptive_policy_training_blender_lq.mp4
+    image_path: /assets/releases/spot_perceptive/perceptive_policy_training_blender_lq.mp4
+    alt: "perceptive_policy_training_blender.mp4"
+    title: "perceptive_policy_training_blender.mp4"
+  - url: /assets/releases/spot_perceptive/basketball_court_perturbation_lq.mp4
+    image_path: /assets/releases/spot_perceptive/basketball_court_perturbation_lq.mp4
+    alt: "basketball_court_perturbation.mp4"
+    title: "basketball_court_perturbation.mp4"
 gallery_dynamic:
-  - url: /assets/release/spot_smpc/spot_tire_upright_lq.mp4
-    image_path: /assets/release/spot_smpc/spot_tire_upright_lq.mp4
+  - url: /assets/releases/spot_smpc/spot_tire_upright_lq.mp4
+    image_path: /assets/releases/spot_smpc/spot_tire_upright_lq.mp4
     alt: "spot_tire_upright.mp4"
     title: "spot_tire_upright.mp4"
-  - url: /assets/release/spot_smpc/spot_rl_training_lq.mp4
-    image_path: /assets/release/spot_smpc/spot_rl_training_lq.mp4
+  - url: /assets/releases/spot_smpc/spot_rl_training_lq.mp4
+    image_path: /assets/releases/spot_smpc/spot_rl_training_lq.mp4
     alt: "spot_rl_training.mp4"
     title: "spot_rl_training.mp4"
-  - url: /assets/release/spot_smpc/spot_tire_roll_lq.mp4
-    image_path: /assets/release/spot_smpc/spot_tire_roll_lq.mp4
+  - url: /assets/releases/spot_smpc/spot_tire_roll_lq.mp4
+    image_path: /assets/releases/spot_smpc/spot_tire_roll_lq.mp4
     alt: "spot_tire_roll.mp4"
     title: "spot_tire_roll.mp4"
 gallery_jacta:
@@ -97,6 +110,11 @@ gallery_algames:
 ---
 
 This is a quick selection of some of the animations I created so far.
+
+### Perceptive Manipulation [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/perceptive-manipulation){: .btn .btn--primary .btn--small}
+{% include video-gallery.html id="gallery_perceptive" %}
+
+***
 
 ### Dynamic Manipulation [extended gallery]({{ site.url }}{{ site.baseurl }}/gallery/dynamic-manipulation){: .btn .btn--primary .btn--small}
 {% include video-gallery.html id="gallery_dynamic" %}

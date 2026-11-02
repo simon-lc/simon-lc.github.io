@@ -62,11 +62,11 @@ correct `_lq.mp4` name to be picked up automatically.
 CRF results while iterating: `28 → 584 KB`, `24 → 892 KB`, `22 → 1.1 MB`.
 CRF **24** was chosen as the best quality that stays under the 1 MB budget.
 
-## Compressing longer / high-resolution videos (`assets/release/**`)
+## Compressing longer / high-resolution videos (`assets/releases/**`)
 
 The ~1 MB budget above is tuned for short gallery GIFs. Longer clips and
 high-resolution footage (e.g. multi-second 1080p/4K `.mp4` demos under
-`assets/release/**`) need a larger budget to stay watchable. For these:
+`assets/releases/**`) need a larger budget to stay watchable. For these:
 
 - Preserve the original file (never overwrite it) and write a `_lq.mp4` sibling.
 - Target **just under 5 MB** per file — small enough for fast web delivery,
@@ -107,7 +107,7 @@ ffmpeg -y -i INPUT.mp4 -movflags +faststart -vf "scale='min(1920,iw)':-2" \
 rm -f ffmpeg2pass-0.log ffmpeg2pass-0.log.mbtree
 ```
 
-### Example: `assets/release/spot_smpc/`
+### Example: `assets/releases/spot_smpc/`
 
 All source `.mp4` clips were compressed to `_lq.mp4` siblings (originals kept),
 downscaled to 1080p and capped under 5 MB:
@@ -122,3 +122,18 @@ downscaled to 1080p and capped under 5 MB:
 | `spot_tire_roll`            | ~14.1 MB | ~4.8 MB   | CRF 26    |
 | `spot_tire_stack`           | ~19.5 MB | ~4.9 MB   | two-pass  |
 | `spot_tire_upright`         | ~8.2 MB  | ~2.3 MB   | CRF 26    |
+
+### Example: `assets/releases/spot_perceptive/`
+
+Raw 4K exports over GitHub's 100 MB file limit are kept locally with a
+`_not_committed` suffix and re-encoded to a committable full-resolution copy
+(~80 MB, two-pass at a bitrate computed from a ~78 MB budget, original
+resolution/frame rate kept). The `_lq.mp4` siblings follow the 1080p / <5 MB
+procedure above.
+
+| File                                               | Size     | Method                     |
+| -------------------------------------------------- | -------- | -------------------------- |
+| `spot_skatepark_overlay_4k60fps_not_committed.mp4` | ~266 MB  | source (do not commit)     |
+| `spot_skatepark_overlay_4k60fps.mp4`               | ~78.5 MB | two-pass 4K60, 17.7 Mbit/s |
+| `spot_skatepark_overlay_4k60fps_lq.mp4`            | ~4.0 MB  | two-pass 1080p60           |
+| `spot_training_depth_4k_lq.mp4`                    | ~4.7 MB  | two-pass 1080p50           |
