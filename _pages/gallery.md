@@ -4,10 +4,10 @@ title: "Gallery"
 layout: single
 classes: wide
 gallery_perceptive:
-  - url: /assets/releases/spot_perceptive/skatepark_sequence_lq.mp4
-    image_path: /assets/releases/spot_perceptive/skatepark_sequence_lq.mp4
-    alt: "skatepark_sequence.mp4"
-    title: "skatepark_sequence.mp4"
+  - url: /assets/releases/spot_perceptive/garage_palletizing_lq.mp4
+    image_path: /assets/releases/spot_perceptive/garage_palletizing_lq.mp4
+    alt: "garage_palletizing.mp4"
+    title: "garage_palletizing.mp4"
   - url: /assets/releases/spot_perceptive/perceptive_policy_training_blender_lq.mp4
     image_path: /assets/releases/spot_perceptive/perceptive_policy_training_blender_lq.mp4
     alt: "perceptive_policy_training_blender.mp4"

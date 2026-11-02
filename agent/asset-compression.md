@@ -125,15 +125,19 @@ downscaled to 1080p and capped under 5 MB:
 
 ### Example: `assets/releases/spot_perceptive/`
 
-Raw 4K exports over GitHub's 100 MB file limit are kept locally with a
-`_not_committed` suffix and re-encoded to a committable full-resolution copy
-(~80 MB, two-pass at a bitrate computed from a ~78 MB budget, original
-resolution/frame rate kept). The `_lq.mp4` siblings follow the 1080p / <5 MB
-procedure above.
+Full-quality (HQ) `.mp4` files are capped **under 50 MB** (GitHub warns above
+50 MB and rejects files over 100 MB). Raw sources (ProRes `.mov`, 4K exports)
+stay local and are not committed. HQ encodes keep the source resolution/frame
+rate (capped at 1080p for `.mov` sources): CRF 18 first, else two-pass at a
+45 MiB budget. `_lq.mp4` siblings follow the 1080p / <5 MB procedure above.
 
-| File                                               | Size     | Method                     |
-| -------------------------------------------------- | -------- | -------------------------- |
-| `spot_skatepark_overlay_4k60fps_not_committed.mp4` | ~266 MB  | source (do not commit)     |
-| `spot_skatepark_overlay_4k60fps.mp4`               | ~78.5 MB | two-pass 4K60, 17.7 Mbit/s |
-| `spot_skatepark_overlay_4k60fps_lq.mp4`            | ~4.0 MB  | two-pass 1080p60           |
-| `spot_training_depth_4k_lq.mp4`                    | ~4.7 MB  | two-pass 1080p50           |
+| File                                  | HQ       | `_lq.mp4` | HQ method                   |
+| ------------------------------------- | -------- | --------- | --------------------------- |
+| `skatepark_sequence_blender`          | ~47.0 MB | ~4.2 MB   | two-pass 4K60, 10.2 Mbit/s  |
+| `perceptive_policy_training_blender`  | ~47.0 MB | ~4.9 MB   | two-pass 4K50, 18.9 Mbit/s  |
+| `basketball_court_perturbation`       | ~47.4 MB | ~4.7 MB   | two-pass 1080p30            |
+| `garage_sequence`                     | ~47.3 MB | ~4.8 MB   | two-pass 1080p30            |
+| `skatepark_sequence`                  | ~47.0 MB | ~4.7 MB   | two-pass 1080p30            |
+| `blooper_van_offloading`              | ~9.6 MB  | ~3.4 MB   | CRF 18                      |
+| `garage_palletizing`                  | ~8.5 MB  | ~2.9 MB   | CRF 18                      |
+| `garage_van_offloading`               | ~7.0 MB  | ~2.3 MB   | CRF 18                      |

@@ -1,13 +1,17 @@
 {% comment %}
 Renders a responsive grid of looping, muted, autoplay videos from a gallery
 front-matter list (same schema as the theme's `gallery` include). Each item's
-`image_path` GIF is mapped to its compressed `_lq.mp4` sibling.
+`image_path` GIF is mapped to its compressed `_lq.mp4` sibling. Clicking an item
+opens a full-screen overlay with the full-quality file (`<base>.mp4`, else
+`<base>.gif`, else the item itself).
 Params:
   id     - name of the front-matter key holding the list (default: "gallery")
   layout - "half" for 2 columns; otherwise auto-fit grid
 {% endcomment %}
 {% assign gallery_id = include.id | default: "gallery" %}
 {% assign items = page[gallery_id] %}
+{% comment %} "|path1|path2|...|" used to check which full-quality files exist. {% endcomment %}
+{% assign static_paths = site.static_files | map: "path" | join: "|" | prepend: "|" | append: "|" %}
 {% if include.layout == "half" %}
   {% assign min_col = "45%" %}
 {% else %}
@@ -16,7 +20,26 @@ Params:
 <div class="video-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax({{ min_col }}, 1fr)); gap: 20px; justify-items: center; margin-bottom: 40px;">
   {% for item in items %}
     {% assign video_src = item.image_path | replace: ".gif", "_lq.mp4" %}
-    <figure class="align-center" style="max-width: 100%; margin: 0;{% if item.style %} {{ item.style }}{% endif %}">
+    {% comment %} Full-quality source for the overlay: <base>.mp4, else <base>.gif, else the item itself. {% endcomment %}
+    {% assign base = item.image_path | split: "." | pop | join: "." %}
+    {% assign base_tail = base | slice: -3, 3 %}
+    {% if base_tail == "_lq" %}
+      {% assign base_len = base | size | minus: 3 %}
+      {% assign base = base | slice: 0, base_len %}
+    {% endif %}
+    {% assign hq_mp4 = base | append: ".mp4" %}
+    {% assign hq_gif = base | append: ".gif" %}
+    {% assign hq_mp4_key = "|" | append: hq_mp4 | append: "|" %}
+    {% assign hq_gif_key = "|" | append: hq_gif | append: "|" %}
+    {% if static_paths contains hq_mp4_key %}
+      {% assign hq_src = hq_mp4 %}
+    {% elsif static_paths contains hq_gif_key %}
+      {% assign hq_src = hq_gif %}
+    {% else %}
+      {% assign hq_src = item.image_path %}
+    {% endif %}
+    <figure class="align-center video-gallery__item" data-hq="{{ hq_src | relative_url }}" title="Click to view full quality"
+            style="max-width: 100%; margin: 0; cursor: zoom-in;{% if item.style %} {{ item.style }}{% endif %}">
       <video src="{{ video_src | relative_url }}" autoplay loop muted playsinline
              style="width: 100%; height: auto;">
         Your browser does not support the video tag.
@@ -25,3 +48,65 @@ Params:
     </figure>
   {% endfor %}
 </div>
+
+<script>
+(function () {
+  // The include can appear several times on a page; set up the overlay only once.
+  if (window.__videoGalleryOverlay) return;
+  window.__videoGalleryOverlay = true;
+
+  var overlay = document.createElement('div');
+  overlay.className = 'video-gallery-overlay';
+  overlay.setAttribute('role', 'dialog');
+  overlay.setAttribute('aria-modal', 'true');
+  overlay.style.cssText = 'display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.9);' +
+    'align-items:center; justify-content:center; padding:2vh 2vw; box-sizing:border-box; cursor:zoom-out;';
+  overlay.innerHTML =
+    '<button type="button" aria-label="Close" style="position:absolute; top:12px; right:20px; background:none;' +
+    ' border:none; color:#fff; font-size:2.5rem; line-height:1; cursor:pointer;">&times;</button>' +
+    '<div class="video-gallery-overlay__media" style="max-width:90vw; max-height:90vh; cursor:default;"></div>';
+  var media = overlay.querySelector('.video-gallery-overlay__media');
+  var mediaStyle = 'display:block; max-width:90vw; max-height:90vh; width:auto; height:auto;';
+
+  function open(src) {
+    var el;
+    if (/\.gif$/i.test(src)) {
+      el = document.createElement('img');
+      el.alt = '';
+    } else {
+      el = document.createElement('video');
+      el.controls = el.autoplay = el.loop = el.muted = el.playsInline = true;
+    }
+    el.src = src;
+    el.style.cssText = mediaStyle;
+    media.innerHTML = '';
+    media.appendChild(el);
+    overlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    var v = media.querySelector('video');
+    if (v) { v.pause(); v.removeAttribute('src'); v.load(); }
+    media.innerHTML = '';
+    overlay.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  overlay.addEventListener('click', function (e) {
+    if (!media.contains(e.target)) close();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && overlay.style.display !== 'none') close();
+  });
+  document.addEventListener('click', function (e) {
+    var item = e.target.closest && e.target.closest('.video-gallery__item[data-hq]');
+    if (!item) return;
+    e.preventDefault();
+    open(item.getAttribute('data-hq'));
+  });
+
+  document.addEventListener('DOMContentLoaded', function () { document.body.appendChild(overlay); });
+  if (document.readyState !== 'loading') document.body.appendChild(overlay);
+})();
+</script>
